@@ -1,0 +1,260 @@
+/* General Styles */
+
+body{
+    font-family: lucida san;
+}
+
+.sections{
+    padding: 20px 0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+/* Header */
+header{
+    height: auto;
+    padding: 10px 0;
+    /* border-bottom: 1px solid #000; */
+    position: relative;
+}
+header i.icon{
+    position: absolute;
+    right: 30px;
+    top: 34px;
+    z-index: 10;
+    display: none;
+}
+
+header .logo h2{
+    font-size: 35px; 
+}
+
+header nav .nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+header nav .nav-list .list a{
+    display: block;
+    padding: 15px;
+    margin: 9px 0;
+    text-decoration: none;   
+    transition: all 0.3s ease-in-out;
+}
+
+header nav .nav-list .list a:hover{
+    color: #FF0000;
+}
+
+@media (max-width:575px){
+    header nav .nav-list{
+        display: none;
+        text-align: center;
+        padding: 0;
+    }
+    
+    header logo{
+        text-align: center;
+    }
+    
+    header i.icon{
+        display: block;
+    }
+}
+
+/* Home Section */
+.home{
+    height: 500px;
+    background-image: url('../images/home/img.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.home .home-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.home .home-title{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.home .home-desc{
+    color: #fff;
+    font-size: 20px;
+}
+
+.home .buttom{
+    background: #7cb62f;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    padding: 10px 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+	width: 100%;
+	background-color: #424558;
+}
+
+nav >{
+	margin: 0px;
+	padding: 0px;
+}
+
+nav > ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+
+nav > ul > li >a{
+    padding: 20px 30px; 
+	color: #FFF;
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.submenu{
+	display: none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration:none;
+}
+
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+
+.submenu li{
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #fff;
+	width: 270px;
+}
+
+.menu-projet:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-configuration:hover{
+	border-top: 5px solid #0070bb;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-parametres:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+
+
+.menu-projet .submenu{
+	background-color: RGB(230, 100, 40);
+}
+
+.menu-parametres .submenu{
+	background-color: RGB(250, 215, 100);
+}
+
+.submenu li:hover a{
+	color: #EEE;
+	font-weight: bold;
+}
+
+.menu-projet .submenu li:hover{
+	background-color: RGB(210, 77, 60); 
+}
+
+
+
+
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(../images/home/0.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: new time roman;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    margin-top: 250px;
+}
+
+p{
+    font-size: 17px;
+    color: white;
+}
+
+h3{
+    font-size: 25px;
+    color: white;
+}
+
+.glyphicon-pencil{
+    font-size: 50px;
+    color: white;
+    float: right;
+    margin-top: 20px;
+}
+
+label{
+    color: white;
+}
+   

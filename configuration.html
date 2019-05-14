@@ -1,0 +1,141 @@
+<! DOCTYPE html>
+<html>
+	<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+       
+		<link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="css/style.css">
+		<title>CONFIGURATION</title>
+		<!-- <meta charset="utf-8"> -->
+	</head>
+	<body>
+		<div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h1 class="text-left">Casino</h1>
+                    <p class="text-left"> Casino facilite la migration des applications de Berger-Levrault devant passer d’un langage d’implémentation à un autre. 
+                    Plusieurs langages sont supportés par l’outil et d’autres langages peuvent être facilement ajoutés.</p>
+                </div>
+                <div class="col-md-5">
+                    <form> 
+                 
+                    </br></br>
+                    
+                    
+                        <div class="row">
+                             
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect2">Source language</label>
+                                <select  class="form-control" name="Langage source" id="exampleFormControlSelect2">
+                                  <option>Java</option>
+                                  <option>C++</option>
+                                  <option>Angular</option>
+                                  <option>C</option>
+                                  <option>C#</option>
+                                  <option>Pharo</option>
+                                  <option>Smalltalk</option>
+                                  <option>HTML</option>
+                                  <option>CSS</option>
+                                  <option>JavaScript</option>
+                                </select>
+                              </div>
+                            <!-- </form>-->
+                        </div>
+                        
+                        <div class="row">
+                            <!-- <form>-->
+                              <div class="form-group">
+                                <label for="exampleFormControlSelect2">Target language</label>
+                                <select  class="form-control" name="Langage cible" id="exampleFormControlSelect2">
+                                  <option>Java</option>
+                                  <option>C++</option>
+                                  <option>Angular</option>
+                                  <option>C</option>
+                                  <option>C#</option>
+                                  <option>Pharo</option>
+                                  <option>Smalltalk</option>
+                                  <option>HTML</option>
+                                  <option>CSS</option>
+                                  <option>JavaScript</option>
+                                </select>
+                              </div>
+                            <!-- </form> -->
+                        </div> 
+                    
+                   
+                        <div class="row">
+                            <!-- <form> -->
+                                <div class="custom-file">
+                                  <input type="file" name="Dossier source" class="custom-file-input" id="customFile">
+                                  <label class="custom-file-label" for="customFile">Source folder</label>
+                                </div>
+                            <!-- </form> -->
+                        </div>
+                    
+                </br>
+                        <div class="row">
+                            <p>Select The Directory:
+                                    <input type="file" name="Dossier cible" webkitdirectory mozdirectory />
+                                    </p>
+                                    
+                            <!-- </form> --> 
+                        </div>
+                    
+                    
+                        <div>
+                        <!--    <form> -->
+                                <div class="form-check">
+                                    <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <input class="btn btn-primary" type="reset" value="Reset">
+                           
+                        </div>
+                    
+                     </form>
+                    
+                    
+                </div>
+        
+            </div>
+        </div>
+
+        
+        
+        
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha <script src="js/vendos/bootstrap.js"> <script src="js/vendos/bootstrap.js">384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+
+    
+            <script>
+                $( "form" ).submit(function( event ) {
+                    var person = {};
+                    $('form [name]').each(function(){
+                        person[this.name] = this.value;
+                    });
+                    console.log(person);
+                    download("person.json", JSON.stringify(person));
+                    event.preventDefault();
+                });
+
+                function download(filename, content) {
+                    var element = document.createElement('a');
+                    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
+                    element.setAttribute('download', filename);
+
+                    element.style.display = 'none';
+                    document.body.appendChild(element);
+
+                    element.click();
+
+                    document.body.removeChild(element);
+                }
+            </script>
+
+
+	</body>
+</html>	
